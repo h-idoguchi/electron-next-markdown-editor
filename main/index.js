@@ -16,6 +16,10 @@ electron_1.app.on('ready', async () => {
     const mainWindow = new electron_1.BrowserWindow({
         width: 800,
         height: 600,
+        visualEffectState: 'active',
+        // frame: false,
+        transparent: true,
+        opacity: 0.5,
         webPreferences: {
             nodeIntegration: false,
             contextIsolation: false,
